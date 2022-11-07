@@ -23,3 +23,31 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+//Cypress.Commands.add -> komut ekle ,tanimla
+
+//automationpracrice.com  => giris icin tanimlandi
+Cypress.Commands.add('login',(email,password)=>{
+    cy.visit("http://automationpracrice.com/index.php")
+    cy.get('.login').click()
+    cy.get('#email').type(email)
+    cy.get('#passwd').type(password)
+    cy.get('#SubmitLogin > span').click()
+
+
+})
+
+//Amazon arama:girilen urun icin arama yapacak
+Cypress.Commands.add('amazonSearch',(produktName)=>{
+    cy.visit('https://www.amazon.com/')
+    cy.get('#twotabsearchtextbox').type(produktName)
+    cy.get('#nav-search-submit-button').click()
+})
+
+//========================================
+
+//https://www.npmjs.com/package/cypress-file-upload
+//npm install --save-dev cypress-file-upload
+import 'cypress-file-upload'
+
