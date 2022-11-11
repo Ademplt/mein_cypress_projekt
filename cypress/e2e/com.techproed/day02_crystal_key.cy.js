@@ -17,7 +17,7 @@ it('Test Case',()=>{
     cy.title().should('eq','KoalaResortHotels - Log in')
 
     //5.yol
-    cy.get('.row > .mb-4').should('include.text','Log in-')
+    cy.get('.row > .mb-4').should('include.text','Log in')
     //Locate edilen yerde 'Log in' text olarak var mi
     
 
