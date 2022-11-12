@@ -7,7 +7,16 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  reporter: 'junit',
+  reporterOptions: {
+    mochaFile: 'results/my-test-output.xml',
+    toConsole: true
+  }
 });
- {
-  projectId: "jgdfs9"
-}
+ 
+
+
+ 
+
+
+
