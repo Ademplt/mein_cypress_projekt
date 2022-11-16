@@ -1,3 +1,6 @@
+/// <reference types="Cypress" />  
+//yukarda ki kod iyilestirme yapiyor
+
 describe('Paylinn bank',()=>{
 
     before(function(){

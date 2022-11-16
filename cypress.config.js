@@ -12,7 +12,15 @@ module.exports = defineConfig({
     mochaFile: 'results/my-test-output.xml',
     toConsole: true
   }
+ 
 });
+// false olan testleri tekrar calistirmak icin kod
+// "video":false,
+ // "retries": {
+  //  "runMode": 2,
+    //"openMode": 0
+  //}
+  
  
 
 
